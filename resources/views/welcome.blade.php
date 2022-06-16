@@ -365,12 +365,12 @@
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="item-review">
-                                <img src="/assets/images/stars.svg" alt="">
+                                <img src="{{ asset('images/stars.svg') }}" alt="">
                                 <p class="message">
                                     Code is really important if we want to build a company and strike to the win
                                 </p>
                                 <div class="user">
-                                    <img src="/assets/images/angga.png" class="photo" alt="">
+                                    <img src="{{ asset('images/angga.png') }}" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
                                             Angga
@@ -384,13 +384,13 @@
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="item-review">
-                                <img src="/assets/images/stars.svg" alt="">
+                                <img src="{{ asset('images/stars.svg') }}" alt="">
                                 <p class="message">
                                     My background is design and art but I do really love how to make my design working in
                                     the development phase
                                 </p>
                                 <div class="user">
-                                    <img src="/assets/images/beatrice.png" class="photo" alt="">
+                                    <img src="{{ asset('images/beatrice.png') }}" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
                                             Beatrice
