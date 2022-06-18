@@ -34,12 +34,13 @@
                                     <strong>{{ $checkout->Camp->price }}k</strong>
                                 </td>
                                 <td>
-                                    @if ($checkout->is_paid)
-                                        <strong class="text-green">Payment Success</strong>
-                                    @else
-                                        <strong>Waiting for Payment</strong>
-                                    @endif
+                                    {{ $checkout->payment_status }}
                                 </td>
+                                @if ($checkout->payment_status == 'waiting')
+                                    <td>
+                                        <a href="{{ $checkout->midtrans_url }}" class="btn btn-primary">Pay Here</a>
+                                    </td>
+                                @endif
                                 <td>
                                     <a href="https://wa.me/08xxxxxxxx?text=hi, saya ingin bertanya tentang kelas ${{ $checkout->Camp->title }} "
                                         class="btn btn-primary">
